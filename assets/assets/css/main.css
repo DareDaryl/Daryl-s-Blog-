@@ -2612,7 +2612,7 @@ input, select, textarea {
 			margin: 0 0 2rem 2rem;
 			top: 0.75rem;
 		}
-
+         
 		.image.fit {
 			display: block;
 			margin: 2.5rem 0;
@@ -2625,7 +2625,10 @@ input, select, textarea {
 
 			.image.fit img {
 				width: 100%;
+				height: 400px; /* Or whatever fixed height you prefer */
+				object-fit: cover; /* To ensure they fill the space without distortion */
 			}
+			
 
 		.image.main {
 			display: block;
