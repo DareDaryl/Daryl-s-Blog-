@@ -233,7 +233,20 @@
 					});
 
 				});
-
+				document.getElementById("fullStoryButton").addEventListener("click", function(event) {
+					event.preventDefault();
+					var extraContent = document.getElementById("extraContent");
+					
+					// Toggle the visibility of the extra content
+					if (extraContent.style.display === "none") {
+					  extraContent.style.display = "inline";  // Make the rest of the paragraph visible
+					  this.textContent = "Read Less";  // Change button text to "Read Less"
+					} else {
+					  extraContent.style.display = "none";  // Hide the extra content again
+					  this.textContent = "Full Story";  // Reset button text to "Full Story"
+					}
+				  });
+				  
 			// Hide intro on scroll (<= small).
 				breakpoints.on('<=small', function() {
 
