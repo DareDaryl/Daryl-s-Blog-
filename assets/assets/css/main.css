@@ -2591,6 +2591,8 @@ input, select, textarea {
 
 		.image img {
 			display: block;
+			filter: sepia(0.6) saturate(1.5) brightness(0.9); /* Applying the brown tint effect */
+			transition: all 0.3s ease;
 		}
 
 		.image.left, .image.right {
